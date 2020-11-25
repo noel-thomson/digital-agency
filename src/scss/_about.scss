@@ -1,0 +1,50 @@
+#about {
+  .container {
+    padding: 100px 40px;
+    text-align: left;
+    .copy {
+      h1 {
+        font-size: 50px;
+        font-weight: 500;
+        margin-bottom: 40px;
+      }
+      p {
+        font-family: Roboto, sans-serif;
+        line-height: 2;
+        font-weight: 300;
+        margin-bottom: 60px;
+        max-width: 550px;
+      }
+    }
+    a {
+      color: white;
+      background: #15191b;
+      border: 1px solid #15191b;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      &:hover {
+        background: white;
+        color: #15191b;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  #about {
+    .container {
+      .copy {
+        h1 {
+          font-size: 36px;
+        }
+        p {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
