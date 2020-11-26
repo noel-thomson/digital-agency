@@ -20,6 +20,7 @@ body {
   height: 100%;
   color: $main-color;
   overflow-x: hidden;
+  overscroll-behavior: none;
 }
 
 h1,

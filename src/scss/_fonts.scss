@@ -1,57 +1,62 @@
 @font-face {
   font-family: SF Pro Display;
-  src: url('../assets/fonts/SFProDisplay-Ultralight.ttf');
+  src: url('../../fonts/SFProDisplay-Ultralight.ttf');
   font-weight: 200;
 }
 @font-face {
   font-family: SF Pro Display;
-  src: url('../assets/fonts/SFProDisplay-Light.ttf');
+  src: url('../../fonts/SFProDisplay-Light.ttf');
   font-weight: 300;
 }
 @font-face {
   font-family: SF Pro Display;
-  src: url('../assets/fonts/SFProDisplay-Regular.ttf');
+  src: url('../../fonts/SFProDisplay-Regular.ttf');
   font-weight: 400;
 }
 @font-face {
   font-family: SF Pro Display;
-  src: url('../assets/fonts/SFProDisplay-Medium.ttf');
+  src: url('../../fonts/SFProDisplay-Medium.ttf');
   font-weight: 500;
 }
 @font-face {
   font-family: SF Pro Display;
-  src: url('../assets/fonts/SFProDisplay-Semibold.ttf');
+  src: url('../../fonts/SFProDisplay-Semibold.ttf');
   font-weight: 600;
 }
 @font-face {
   font-family: SF Pro Display;
-  src: url('../assets/fonts/SFProDisplay-Bold.ttf');
+  src: url('../../fonts/SFProDisplay-Bold.ttf');
   font-weight: 700;
 }
 @font-face {
   font-family: SF Pro Display;
-  src: url('../assets/fonts/SFProDisplay-Heavy.ttf');
+  src: url('../../fonts/SFProDisplay-Heavy.ttf');
   font-weight: 800;
 }
 
 //
 @font-face {
   font-family: 'Helvetica Neue';
-  src: url('../assets/fonts/helvetica-neue/helvetica-neue-medium.ttf');
-  font-weight: 400;
+  src: url('../../fonts/helvetica-neue/helvetica-neue-300.ttf');
+  font-weight: 300;
 }
-// @font-face {
-//   font-family: Helvetica Neue;
-//   src: url('../assets/fonts/helvetica-neue/helvetica-neue-bold.ttf');
-//   font-weight: 500;
-// }
-// @font-face {
-//   font-family: Helvetica Neue;
-//   src: url('../assets/fonts/helvetica-neue/helvetica-neue-bold.ttf');
-//   font-weight: 600;
-// }
 @font-face {
   font-family: 'Helvetica Neue';
-  src: url('../assets/fonts/helvetica-neue/helvetica-neue-bold.ttf');
+  src: url('../../fonts/helvetica-neue/helvetica-neue-400.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../../fonts/helvetica-neue/helvetica-neue-500.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../../fonts/helvetica-neue/helvetica-neue-600.ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../../fonts/helvetica-neue/Helvetica-Neu-700.ttf');
   font-weight: 700;
 }
