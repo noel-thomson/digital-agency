@@ -430,7 +430,7 @@ section {
   #slider .slider .slide .slide-content h1 {
     font-size: 50px; }
   #slider .slider .slide .slide-content h2 {
-    font-size: 16px; } }
+    display: none; } }
 
 #showcase {
   background: #e8f0fe;
