@@ -17,10 +17,9 @@
       .image-container {
         margin: 40px 2%;
         width: 17%;
-        display: flex;
-        justify-content: center;
         img {
           width: 100%;
+          height: auto;
         }
       }
     }
