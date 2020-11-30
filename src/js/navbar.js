@@ -21,7 +21,8 @@ window.onscroll = () => {
   let currentScrollPos = window.pageYOffset;
   if (window.scrollY < 0) {
     return;
-  } else if (window.scrollY === 0) {
+  }
+  if (window.scrollY === 0) {
     document.getElementById('navbar').classList.remove('white');
   } else if (prevScrollPos > currentScrollPos) {
     document.getElementById('navbar').classList.remove('hide');
