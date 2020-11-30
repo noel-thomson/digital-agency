@@ -19,12 +19,14 @@ for (let navLink of navLinks) {
 let prevScrollPos = window.pageYOffset;
 window.onscroll = () => {
   let currentScrollPos = window.pageYOffset;
-  if (window.scrollY === 0) {
+  if (window.scrollY < 0) {
+    return;
+  } else if (window.scrollY === 0) {
     document.getElementById('navbar').classList.remove('white');
   } else if (prevScrollPos > currentScrollPos) {
     document.getElementById('navbar').classList.remove('hide');
     document.getElementById('navbar').classList.add('white');
-  } else {
+  } else if (prevScrollPos < currentScrollPos) {
     if (!navbar.classList.contains('open')) {
       document.getElementById('navbar').classList.add('hide');
     }
