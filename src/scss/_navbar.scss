@@ -19,11 +19,11 @@
       align-items: center;
       justify-content: space-between;
       .logo__container {
-        // width: 250px;
-        img {
+        svg {
           height: 35px;
-          vertical-align: middle;
-          margin: 0 10px;
+          .logo {
+            fill: white;
+          }
         }
       }
       .top-nav__list__wrapper {
@@ -64,13 +64,186 @@
     }
   }
 }
+// scroll animation
+#navbar.hide {
+  top: -80px;
+}
+// white styling
+#navbar.white {
+  background: white;
+  color: black;
+  .navbar__wrapper {
+    .navbar__container {
+      .logo__container {
+        svg {
+          height: 35px;
+          .logo {
+            fill: black;
+          }
+        }
+      }
+      .top-nav__list__wrapper {
+        .top-nav__list__container {
+          .top-nav__list {
+            li {
+              .top-nav__link {
+                color: black;
+              }
+              .cta {
+                background-color: black;
+                color: white;
+              }
+              .cta:hover {
+                background-color: white;
+                color: black;
+                border: 1px solid black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// mobile styling
+@media (max-width: 990px) {
+  #navbar {
+    .navbar__wrapper {
+      .navbar__container {
+        padding: 15px 30px;
+        .logo__container {
+          svg {
+            width: 30px;
+          }
+        }
+        .top-nav__list__wrapper {
+          top: -100vh;
+          height: 100vh;
+          width: 100vh;
+          position: fixed;
+          left: 0;
+          transition: all 0.4s ease-in-out;
+          .top-nav__list__container {
+            background: white;
+            height: 100%;
+            position: relative;
+            width: 100%;
+            .top-nav__list {
+              margin: 0;
+              flex-direction: column;
+              padding: 60px 30px 30px;
+              li {
+                margin-top: 10px;
+                position: relative;
+                width: max-content;
+                &:last-of-type {
+                  margin-top: 30px;
+                }
+                .top-nav__link {
+                  color: black;
+                  font-size: 24px;
+                }
+                .cta {
+                  background-color: black;
+                  color: white;
+                  font-size: 16px;
+                }
+                .cta:hover {
+                  background-color: white;
+                  color: black;
+                  border: 1px solid black;
+                }
+              }
+            }
+          }
+        }
+        .top-nav__mobile-toggle {
+          display: block;
+          .top-nav__hamburger {
+            span {
+              background: white;
+            }
+          }
+        }
+      }
+    }
+  }
+  #navbar.white {
+    background: white;
+    color: black;
+    .navbar__wrapper {
+      .navbar__container {
+        .logo__container {
+          svg {
+            height: 35px;
+            .logo {
+              fill: black;
+            }
+          }
+        }
+        .top-nav__list__wrapper {
+          .top-nav__list__container {
+            .top-nav__list {
+              li {
+                .top-nav__link {
+                  color: black;
+                }
+                .cta {
+                  background-color: black;
+                  color: white;
+                }
+                .cta:hover {
+                  background-color: white;
+                  color: black;
+                  border: 1px solid black;
+                }
+              }
+            }
+          }
+        }
+        .top-nav__mobile-toggle {
+          display: block;
+          .top-nav__hamburger {
+            span {
+              background: black;
+              transition-delay: 0s;
+            }
+          }
+        }
+      }
+    }
+  }
+  #navbar.open {
+    .navbar__wrapper {
+      .navbar__container {
+        .top-nav__list__wrapper {
+          top: 0;
+        }
+        .top-nav__mobile-toggle {
+          .top-nav__hamburger {
+            span {
+              background: black;
+              transition-delay: 0s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// * decrease logo size *
+@media screen and (max-width: 575px) {
+  // if nav features large logo
+}
 
 // hamburger
 .top-nav__mobile-toggle {
   display: none;
   position: absolute;
-  right: 15px;
-  top: calc(calc(100% / 2) - 12px);
+  right: 30px;
+  top: calc(50% - 12px);
 }
 .top-nav__hamburger {
   height: 24px;
@@ -127,169 +300,4 @@
 }
 .top-nav__link:not(.cta):hover::after {
   width: 100%;
-}
-
-// scroll animation
-#navbar.hide {
-  top: -80px;
-}
-
-// non-transparent white styling
-#navbar.white {
-  background: white;
-  color: black;
-  .navbar__wrapper {
-    .navbar__container {
-      .logo__container {
-        img {
-          content: url('../../imgs/logo/logo_large.png');
-        }
-      }
-      .top-nav__list__wrapper {
-        .top-nav__list__container {
-          .top-nav__list {
-            li {
-              .top-nav__link {
-                color: black;
-              }
-              .cta {
-                background-color: black;
-                color: white;
-              }
-              .cta:hover {
-                background-color: white;
-                color: black;
-                border: 1px solid black;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-// mobile styling
-@media (max-width: 990px) {
-  #navbar {
-    .navbar__wrapper {
-      .navbar__container {
-        .top-nav__list__wrapper {
-          top: -100vh;
-          height: 100vh;
-          width: 100vh;
-          position: fixed;
-          left: 0;
-          transition: all 0.4s ease-in-out;
-          .top-nav__list__container {
-            background: white;
-            height: 100%;
-            position: relative;
-            width: 100%;
-            .top-nav__list {
-              margin: 0;
-              flex-direction: column;
-              padding: 60px 30px 30px;
-              li {
-                margin-top: 10px;
-                position: relative;
-                width: max-content;
-                &:last-of-type {
-                  margin-top: 25px;
-                }
-                .top-nav__link {
-                  color: black;
-                  font-size: 24px;
-                }
-                .cta {
-                  background-color: black;
-                  color: white;
-                  font-size: 16px;
-                }
-                .cta:hover {
-                  background-color: white;
-                  color: black;
-                  border: 1px solid black;
-                }
-              }
-            }
-          }
-        }
-        .top-nav__mobile-toggle {
-          display: block;
-          .top-nav__hamburger {
-            span {
-              background: white;
-            }
-          }
-        }
-      }
-    }
-  }
-  #navbar.white {
-    background: white;
-    color: black;
-    .navbar__wrapper {
-      .navbar__container {
-        .logo__container {
-          img {
-            content: url('../../imgs/logo/logo_large.png');
-          }
-        }
-        .top-nav__list__wrapper {
-          .top-nav__list__container {
-            .top-nav__list {
-              li {
-                .top-nav__link {
-                  color: black;
-                }
-                .cta {
-                  background-color: black;
-                  color: white;
-                }
-                .cta:hover {
-                  background-color: white;
-                  color: black;
-                  border: 1px solid black;
-                }
-              }
-            }
-          }
-        }
-        .top-nav__mobile-toggle {
-          display: block;
-          .top-nav__hamburger {
-            span {
-              background: black;
-              transition-delay: 0s;
-            }
-          }
-        }
-      }
-    }
-  }
-  #navbar.open {
-    .navbar__wrapper {
-      .navbar__container {
-        .top-nav__list__wrapper {
-          top: 0;
-        }
-        .top-nav__mobile-toggle {
-          .top-nav__hamburger {
-            span {
-              background: black;
-              transition-delay: 0s;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-// * decrease logo size *
-@media screen and (max-width: 320px) {
-  .logo__container {
-    width: 200px;
-  }
 }

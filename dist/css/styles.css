@@ -152,10 +152,10 @@ section {
       display: flex;
       align-items: center;
       justify-content: space-between; }
-      #navbar .navbar__wrapper .navbar__container .logo__container img {
-        height: 35px;
-        vertical-align: middle;
-        margin: 0 10px; }
+      #navbar .navbar__wrapper .navbar__container .logo__container svg {
+        height: 35px; }
+        #navbar .navbar__wrapper .navbar__container .logo__container svg .logo {
+          fill: white; }
       #navbar .navbar__wrapper .navbar__container .top-nav__list__wrapper .top-nav__list__container .top-nav__list {
         display: flex;
         padding-left: 0; }
@@ -183,11 +183,102 @@ section {
             color: white;
             border: 1px solid white; }
 
+#navbar.hide {
+  top: -80px; }
+
+#navbar.white {
+  background: white;
+  color: black; }
+  #navbar.white .navbar__wrapper .navbar__container .logo__container svg {
+    height: 35px; }
+    #navbar.white .navbar__wrapper .navbar__container .logo__container svg .logo {
+      fill: black; }
+  #navbar.white .navbar__wrapper .navbar__container .top-nav__list__wrapper .top-nav__list__container .top-nav__list li .top-nav__link {
+    color: black; }
+  #navbar.white .navbar__wrapper .navbar__container .top-nav__list__wrapper .top-nav__list__container .top-nav__list li .cta {
+    background-color: black;
+    color: white; }
+  #navbar.white .navbar__wrapper .navbar__container .top-nav__list__wrapper .top-nav__list__container .top-nav__list li .cta:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black; }
+
+@media (max-width: 990px) {
+  #navbar .navbar__wrapper .navbar__container {
+    padding: 15px 30px; }
+    #navbar .navbar__wrapper .navbar__container .logo__container svg {
+      width: 30px; }
+    #navbar .navbar__wrapper .navbar__container .top-nav__list__wrapper {
+      top: -100vh;
+      height: 100vh;
+      width: 100vh;
+      position: fixed;
+      left: 0;
+      transition: all 0.4s ease-in-out; }
+      #navbar .navbar__wrapper .navbar__container .top-nav__list__wrapper .top-nav__list__container {
+        background: white;
+        height: 100%;
+        position: relative;
+        width: 100%; }
+        #navbar .navbar__wrapper .navbar__container .top-nav__list__wrapper .top-nav__list__container .top-nav__list {
+          margin: 0;
+          flex-direction: column;
+          padding: 60px 30px 30px; }
+          #navbar .navbar__wrapper .navbar__container .top-nav__list__wrapper .top-nav__list__container .top-nav__list li {
+            margin-top: 10px;
+            position: relative;
+            width: -webkit-max-content;
+            width: -moz-max-content;
+            width: max-content; }
+            #navbar .navbar__wrapper .navbar__container .top-nav__list__wrapper .top-nav__list__container .top-nav__list li:last-of-type {
+              margin-top: 30px; }
+            #navbar .navbar__wrapper .navbar__container .top-nav__list__wrapper .top-nav__list__container .top-nav__list li .top-nav__link {
+              color: black;
+              font-size: 24px; }
+            #navbar .navbar__wrapper .navbar__container .top-nav__list__wrapper .top-nav__list__container .top-nav__list li .cta {
+              background-color: black;
+              color: white;
+              font-size: 16px; }
+            #navbar .navbar__wrapper .navbar__container .top-nav__list__wrapper .top-nav__list__container .top-nav__list li .cta:hover {
+              background-color: white;
+              color: black;
+              border: 1px solid black; }
+    #navbar .navbar__wrapper .navbar__container .top-nav__mobile-toggle {
+      display: block; }
+      #navbar .navbar__wrapper .navbar__container .top-nav__mobile-toggle .top-nav__hamburger span {
+        background: white; }
+  #navbar.white {
+    background: white;
+    color: black; }
+    #navbar.white .navbar__wrapper .navbar__container .logo__container svg {
+      height: 35px; }
+      #navbar.white .navbar__wrapper .navbar__container .logo__container svg .logo {
+        fill: black; }
+    #navbar.white .navbar__wrapper .navbar__container .top-nav__list__wrapper .top-nav__list__container .top-nav__list li .top-nav__link {
+      color: black; }
+    #navbar.white .navbar__wrapper .navbar__container .top-nav__list__wrapper .top-nav__list__container .top-nav__list li .cta {
+      background-color: black;
+      color: white; }
+    #navbar.white .navbar__wrapper .navbar__container .top-nav__list__wrapper .top-nav__list__container .top-nav__list li .cta:hover {
+      background-color: white;
+      color: black;
+      border: 1px solid black; }
+    #navbar.white .navbar__wrapper .navbar__container .top-nav__mobile-toggle {
+      display: block; }
+      #navbar.white .navbar__wrapper .navbar__container .top-nav__mobile-toggle .top-nav__hamburger span {
+        background: black;
+        transition-delay: 0s; }
+  #navbar.open .navbar__wrapper .navbar__container .top-nav__list__wrapper {
+    top: 0; }
+  #navbar.open .navbar__wrapper .navbar__container .top-nav__mobile-toggle .top-nav__hamburger span {
+    background: black;
+    transition-delay: 0s; } }
+
 .top-nav__mobile-toggle {
   display: none;
   position: absolute;
-  right: 15px;
-  top: calc(calc(100% / 2) - 12px); }
+  right: 30px;
+  top: calc(50% - 12px); }
 
 .top-nav__hamburger {
   height: 24px;
@@ -236,93 +327,6 @@ section {
 
 .top-nav__link:not(.cta):hover::after {
   width: 100%; }
-
-#navbar.hide {
-  top: -80px; }
-
-#navbar.white {
-  background: white;
-  color: black; }
-  #navbar.white .navbar__wrapper .navbar__container .logo__container img {
-    content: url("../../imgs/logo/logo_large.png"); }
-  #navbar.white .navbar__wrapper .navbar__container .top-nav__list__wrapper .top-nav__list__container .top-nav__list li .top-nav__link {
-    color: black; }
-  #navbar.white .navbar__wrapper .navbar__container .top-nav__list__wrapper .top-nav__list__container .top-nav__list li .cta {
-    background-color: black;
-    color: white; }
-  #navbar.white .navbar__wrapper .navbar__container .top-nav__list__wrapper .top-nav__list__container .top-nav__list li .cta:hover {
-    background-color: white;
-    color: black;
-    border: 1px solid black; }
-
-@media (max-width: 990px) {
-  #navbar .navbar__wrapper .navbar__container .top-nav__list__wrapper {
-    top: -100vh;
-    height: 100vh;
-    width: 100vh;
-    position: fixed;
-    left: 0;
-    transition: all 0.4s ease-in-out; }
-    #navbar .navbar__wrapper .navbar__container .top-nav__list__wrapper .top-nav__list__container {
-      background: white;
-      height: 100%;
-      position: relative;
-      width: 100%; }
-      #navbar .navbar__wrapper .navbar__container .top-nav__list__wrapper .top-nav__list__container .top-nav__list {
-        margin: 0;
-        flex-direction: column;
-        padding: 60px 30px 30px; }
-        #navbar .navbar__wrapper .navbar__container .top-nav__list__wrapper .top-nav__list__container .top-nav__list li {
-          margin-top: 10px;
-          position: relative;
-          width: -webkit-max-content;
-          width: -moz-max-content;
-          width: max-content; }
-          #navbar .navbar__wrapper .navbar__container .top-nav__list__wrapper .top-nav__list__container .top-nav__list li:last-of-type {
-            margin-top: 25px; }
-          #navbar .navbar__wrapper .navbar__container .top-nav__list__wrapper .top-nav__list__container .top-nav__list li .top-nav__link {
-            color: black;
-            font-size: 24px; }
-          #navbar .navbar__wrapper .navbar__container .top-nav__list__wrapper .top-nav__list__container .top-nav__list li .cta {
-            background-color: black;
-            color: white;
-            font-size: 16px; }
-          #navbar .navbar__wrapper .navbar__container .top-nav__list__wrapper .top-nav__list__container .top-nav__list li .cta:hover {
-            background-color: white;
-            color: black;
-            border: 1px solid black; }
-  #navbar .navbar__wrapper .navbar__container .top-nav__mobile-toggle {
-    display: block; }
-    #navbar .navbar__wrapper .navbar__container .top-nav__mobile-toggle .top-nav__hamburger span {
-      background: white; }
-  #navbar.white {
-    background: white;
-    color: black; }
-    #navbar.white .navbar__wrapper .navbar__container .logo__container img {
-      content: url("../../imgs/logo/logo_large.png"); }
-    #navbar.white .navbar__wrapper .navbar__container .top-nav__list__wrapper .top-nav__list__container .top-nav__list li .top-nav__link {
-      color: black; }
-    #navbar.white .navbar__wrapper .navbar__container .top-nav__list__wrapper .top-nav__list__container .top-nav__list li .cta {
-      background-color: black;
-      color: white; }
-    #navbar.white .navbar__wrapper .navbar__container .top-nav__list__wrapper .top-nav__list__container .top-nav__list li .cta:hover {
-      background-color: white;
-      color: black;
-      border: 1px solid black; }
-    #navbar.white .navbar__wrapper .navbar__container .top-nav__mobile-toggle {
-      display: block; }
-      #navbar.white .navbar__wrapper .navbar__container .top-nav__mobile-toggle .top-nav__hamburger span {
-        background: black;
-        transition-delay: 0s; }
-  #navbar.open .navbar__wrapper .navbar__container .top-nav__list__wrapper {
-    top: 0; }
-  #navbar.open .navbar__wrapper .navbar__container .top-nav__mobile-toggle .top-nav__hamburger span {
-    background: black;
-    transition-delay: 0s; } }
-
-@media screen and (max-width: 320px) {
-  .logo__container {
-    width: 200px; } }
 
 #slider {
   font-family: 'helvetica neue', sans-serif; }
