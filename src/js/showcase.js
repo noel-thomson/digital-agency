@@ -22,4 +22,4 @@ const showcaseNext = () => {
   }
   wrapper.style.background = colorsArr[num];
 };
-const nextInterval = setInterval(showcaseNext, 4000);
+const nextInterval = setInterval(showcaseNext, 3500);

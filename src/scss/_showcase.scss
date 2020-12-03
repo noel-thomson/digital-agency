@@ -1,7 +1,6 @@
 #showcase {
   background: #e8f0fe;
   height: 680px;
-  // overflow-x: hidden;
   .container {
     padding: 0;
     height: 100%;
@@ -103,7 +102,7 @@
         .col {
           &:nth-of-type(2) {
             .showcase-image {
-              animation: image 0.5s forwards, imageEnd 0.3s forwards 3.7s;
+              animation: image 0.5s forwards, imageEnd 0.3s forwards 3.2s;
               animation-timing-function: cubic-bezier(0.25, 0, 0.75, 1);
             }
           }
@@ -111,7 +110,7 @@
         &:nth-of-type(2) {
           .progress-bar {
             &::before {
-              animation: progress 3.4s forwards linear 0.3s;
+              animation: progress 2.9s forwards linear 0.3s;
             }
           }
         }

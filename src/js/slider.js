@@ -9,4 +9,4 @@ const slideNext = () => {
     slides[0].classList.add('current');
   }
 };
-const slideInterval = setInterval(slideNext, 4000);
+const slideInterval = setInterval(slideNext, 3000);
