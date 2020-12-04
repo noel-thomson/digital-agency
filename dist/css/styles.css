@@ -519,13 +519,13 @@ section {
     opacity: 1;
     transition: all 0.5s ease-in-out; }
     #showcase .container .showcase-item.active .row .col:nth-of-type(2) .showcase-image {
-      -webkit-animation: image 0.5s forwards, imageEnd 0.3s forwards 3.2s;
-              animation: image 0.5s forwards, imageEnd 0.3s forwards 3.2s;
+      -webkit-animation: image 0.5s forwards, imageEnd 0.3s forwards 4.2s;
+              animation: image 0.5s forwards, imageEnd 0.3s forwards 4.2s;
       -webkit-animation-timing-function: cubic-bezier(0.25, 0, 0.75, 1);
               animation-timing-function: cubic-bezier(0.25, 0, 0.75, 1); }
     #showcase .container .showcase-item.active .row:nth-of-type(2) .progress-bar::before {
-      -webkit-animation: progress 2.9s forwards linear 0.3s;
-              animation: progress 2.9s forwards linear 0.3s; }
+      -webkit-animation: progress 3.8s forwards linear 0.3s;
+              animation: progress 3.8s forwards linear 0.3s; }
 
 @-webkit-keyframes image {
   0% {
